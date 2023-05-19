@@ -1,9 +1,7 @@
 package com.dzcorp.demokotlin
 
 fun main(args: Array<String>) {
-
-    classFunction()
-
+    forLoopKotlin()
 }
 
 //class in kotlin
@@ -47,8 +45,33 @@ fun varTest(): Unit {
 }
 
 
+//String templates
+fun stringTemplate(): Unit {
+    var a = 1
+    val s = "a is $a"
+
+    val s2 = "${s.replace("is", "was")}"
+    println(s2)
+}
 
 
+//Kotlin if expression
+
+/**
+ * if can be an expression
+ */
+fun expression(a: Int, b: Int) = if (a > b) b else a
+
+
+//Kotlin for loop
+
+fun forLoopKotlin() {
+    val fruits = listOf("banana", "aple", "kiwi")
+
+    for (fruit in fruits) {
+        println(fruit)
+    }
+}
 
 
 
