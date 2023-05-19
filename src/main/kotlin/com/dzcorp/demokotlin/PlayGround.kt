@@ -1,7 +1,7 @@
 package com.dzcorp.demokotlin
 
 fun main(args: Array<String>) {
-    forLoopKotlin()
+    forLoopWithIndex()
 }
 
 //class in kotlin
@@ -70,6 +70,14 @@ fun forLoopKotlin() {
 
     for (fruit in fruits) {
         println(fruit)
+    }
+}
+
+fun forLoopWithIndex() {
+    val fruits = listOf("banana", "apple", "kiwi")
+
+    for (fruit in fruits.indices) {
+        println("item at $fruit is ${fruits[fruit]}")
     }
 }
 
