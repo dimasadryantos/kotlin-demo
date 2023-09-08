@@ -1,8 +1,23 @@
 package com.dzcorp.demokotlin
 
 fun main(args: Array<String>) {
-    forLoopWithIndex()
+
+    val message = loopWithAny()
+
+    println(!message)
 }
+
+fun loopWithAny() : Boolean {
+    val circles = listOf(Circle("RETURN"), Circle("NOT_RETURN"))
+
+    val found = circles.any() {
+        (it.type == "RETURN")
+    }
+
+    return found
+}
+
+
 
 //class in kotlin
 
